@@ -1,11 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Victor+Mono&display=swap");
+:root {
+  --pale-dogwood: #e5ceccff;
+  --french-gray: #b6bccbff;
+  --van-dyke: #443a3fff;
+  --rich-black: #060d20ff;
+  --black: #000000ff;
+}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Victor Mono", monospace;
 }
-
+.app-font {
+  font-family: "Gruppo", sans-serif !important ;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -13,6 +22,7 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: "Victor Mono", monospace !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +30,17 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
+    color: black;
     background: black;
   }
+}
+#banner {
+  background-image: linear-gradient(
+    to bottom,
+    #e5cecc,
+    #dec8ce,
+    #d2c3cf,
+    #c5bfcf,
+    #b6bccb
+  );
 }
